@@ -14,7 +14,6 @@ public class Player {
     public void shootArrow(Dragon dragon){
         dragon.life=dragon.life-1;
     }
-
     public void shootFireArrow(Dragon dragon){
         dragon.life=dragon.life-3;
     }

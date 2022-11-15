@@ -30,8 +30,8 @@ public class ObjectsPractice {
         System.out.print("Step 1: "); op.getPlayerInfo(new Player("Bob"));
         System.out.print("Step 2: "); op.dragonAttackTester();
         System.out.print("Step 3: "); op.playerAttackTester();
-        System.out.print("Step 4: "); op.gameAttackTester();
-        System.out.print("Step 5: "); op.playGameTester();
+        System.out.println("Step 4: "+ op.gameAttackTester());
+        System.out.print("Step 5: " + op.playGameTester());
     }
 
     /**
@@ -51,7 +51,7 @@ public class ObjectsPractice {
 
     /**
      * Task 2
-     * Create a Dragon class, the dragon needs to have 5 lives
+     * Create a Dragon class, the dragon needs to have 6 lives
      * Create a method for the dragon, that allows him to attack the player
      * Each time the method is called player loses one life.
      * Use the method below to test the solution.
@@ -92,12 +92,18 @@ public class ObjectsPractice {
      * Implement the following functionality in the game class
      * The Player uses a random skill,
      * The dragon attacks back
+     * The method must return the name of the attack from the player's attack list
      * See examlpes of using random in 9.6.2 The Random Class
+     * Tip! You can use the player attacks array to print out players actions
+     *      on the screen to make it more fun to debug potential problems.
      */
 
-    public void gameAttackTester(){
-        Game game = new Game();
-        game.randomPlayerAttack();
+    public String gameAttackTester(){
+        Player player = new Player("Tom");
+        Dragon dragon = new Dragon();
+        Game game = new Game(player, dragon);
+        String attack = game.randomPlayerAttack();
+        return attack;
     }
 
     /**
@@ -110,12 +116,16 @@ public class ObjectsPractice {
      * Player shoots first. Dragon can not shoot back if he has 0 lives.
      * Make some print statements for dragon and player life
      * to keep track of the damage in the game.
+     * Return Strings must be exactly these: "Dragon won the game!", "Player won the game!".
      * Have fun!
      */
 
-   public  void playGameTester(){
-   Game game = new Game();
-      game.play();
+   public String playGameTester(){
+       Player player = new Player("Tom");
+       Dragon dragon = new Dragon();
+       Game game = new Game(player, dragon);
+       String winner =game.play();
+       return winner;
    }
 
 
@@ -127,9 +137,4 @@ public class ObjectsPractice {
         return "hello world!";
     }
 
-    // Write a public static function that counts how many times the letter combination "dog" appears in the string
-    public static int countDogs(String phrase) {
-        // Add Your Code Here ...
-        return -1;
-    }
 }

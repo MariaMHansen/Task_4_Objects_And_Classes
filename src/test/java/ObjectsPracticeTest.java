@@ -131,11 +131,4 @@ class ObjectsPracticeTest {
         assertEquals("Dragon won the game!", game1.play());
         assertEquals("Player won the game!", game2.play());
     }
-
-    @DisplayName("checks if sayHello method returns String hello world")
-    @Test
-    void Should_ReturnHelloWorld() {
-        Assertions.assertEquals("hello world!", ObjectsPractice.sayHello());
-    }
-
 }

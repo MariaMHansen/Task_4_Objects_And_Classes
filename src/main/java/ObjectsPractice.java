@@ -127,14 +127,4 @@ public class ObjectsPractice {
        String winner =game.play();
        return winner;
    }
-
-
-
-    /////////////OLD CODE////////////////////////////////
-    // Write a public static function `sayHello` that returns "hello world!"
-    public static String sayHello(){
-        // Add Your Code Here ...
-        return "hello world!";
-    }
-
 }

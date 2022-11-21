@@ -26,12 +26,12 @@ import java.util.Arrays;
  */
 public class ObjectsPractice {
     public static void main(String[] args) {
-        ObjectsPractice op = new ObjectsPractice();
-        System.out.print("Step 1: "); op.getPlayerInfo(new Player("Bob"));
-        System.out.print("Step 2: "); op.dragonAttackTester();
-        System.out.print("Step 3: "); op.playerAttackTester();
-        System.out.println("Step 4: "+ op.gameAttackTester());
-        System.out.print("Step 5: " + op.playGameTester());
+        // ObjectsPractice op = new ObjectsPractice();
+        // System.out.print("Step 1: "); op.getPlayerInfo(new Player("Bob"));
+        // System.out.print("Step 2: "); op.dragonAttackTester();
+        // System.out.print("Step 3: "); op.playerAttackTester();
+        // System.out.println("Step 4: "+ op.gameAttackTester());
+        // System.out.print("Step 5: " + op.playGameTester());
     }
 
     /**
@@ -43,17 +43,19 @@ public class ObjectsPractice {
      * See the UML diagram for this class to implement it correctly,
      * you can find it in the main directory of the project in the UML folder (double click to open the png)
      * We will only implement the Player class from the diagram in this step.
-     * Uncomment the getPlayerInfo method to test the solution
+     * Uncomment the getPlayerInfo method to test the solution.
      * You can read more about implementing UML diagrams as code in:
      * "Introduction to Java Programming and Data Structures book" 9.2 Defining Classes for Objects
      */
 
-
+     /*
     public void getPlayerInfo(Player player){
         System.out.print("Player " +player.name);
-       System.out.print(" life "   +player.life);
+        System.out.print(" life "   +player.life);
         System.out.println(" skills " +Arrays.toString(player.attacks));
     }
+
+      */
 
 
     /**
@@ -63,16 +65,17 @@ public class ObjectsPractice {
      * Each time the method is called player loses one life.
      * Use the UML diagram to implement the Dragon class correctly
      * Uncomment the method below to test the solution.
+     * return "Dragon attacks"
      */
 
-
+     /*
     public void dragonAttackTester(){
         Dragon dragon = new Dragon();
         Player player2 = new Player("Tom");
-        dragon.attack(player2);
-        System.out.println("Players life is now "+ player2.life);
+        System.out.print(dragon.attack(player2));
+        System.out.println(" player's life is now "+ player2.life);
     }
-
+      */
 
 
     /**
@@ -88,7 +91,7 @@ public class ObjectsPractice {
      *     on the screen to make it more fun to debug potential problems.
      */
 
-
+     /*
     public void playerAttackTester(){
         Player player = new Player("Sam");
         Dragon dragon = new Dragon();
@@ -99,6 +102,8 @@ public class ObjectsPractice {
         player.useHealingPotion();
         System.out.println(" player life increases to " +player.life);
     }
+
+      */
 
 
     /**
@@ -111,7 +116,7 @@ public class ObjectsPractice {
      *      on the screen to make it more fun to debug potential problems.
      */
 
-
+ /*
     public String gameAttackTester(){
         Player player = new Player("Tom");
         Dragon dragon = new Dragon();
@@ -119,6 +124,8 @@ public class ObjectsPractice {
         String attack = game.randomPlayerAttack();
         return attack;
     }
+
+  */
 
 
     /**
@@ -135,7 +142,7 @@ public class ObjectsPractice {
      * Use the UML diagram to implement the associations relations classes correctly
      */
 
-
+ /*
    public String playGameTester(){
        Player player = new Player("Tom");
        Dragon dragon = new Dragon();
@@ -143,5 +150,10 @@ public class ObjectsPractice {
        String winner =game.play();
        return winner;
    }
+  */
 
+/**
+ * Classes and Objects Assignment
+ * @author Maria Hansen
+ */
 }

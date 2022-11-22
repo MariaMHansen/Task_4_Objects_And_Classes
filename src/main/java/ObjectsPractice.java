@@ -46,6 +46,9 @@ public class ObjectsPractice {
      * Uncomment the getPlayerInfo method to test the solution.
      * You can read more about implementing UML diagrams as code in:
      * "Introduction to Java Programming and Data Structures book" 9.2 Defining Classes for Objects
+     *  Points: 2
+     *  New skills: creating classes
+     *  Difficulty: 2
      */
 
      /*
@@ -66,6 +69,9 @@ public class ObjectsPractice {
      * Use the UML diagram to implement the Dragon class correctly
      * Uncomment the method below to test the solution.
      * return "Dragon attacks"
+     * Points: 2
+     * New skills: creating methods that use classes
+     * Difficulty: 2
      */
 
      /*
@@ -89,6 +95,9 @@ public class ObjectsPractice {
      *     Use the UML diagram Game class as reference.
      *     Tip! You can use the player attacks array to print out players actions
      *     on the screen to make it more fun to debug potential problems.
+     *     Points: 3
+     *     New skills: using classes together
+     *     Difficulty: 3
      */
 
      /*
@@ -114,6 +123,9 @@ public class ObjectsPractice {
      * See examples of using random in 9.6.2 The Random Class
      * Tip! You can use the player attacks array to print out players actions
      *      on the screen to make it more fun to debug potential problems.
+     * Points: 3
+     * New skills: using Random class
+     * Difficulty: 4
      */
 
  /*
@@ -140,6 +152,9 @@ public class ObjectsPractice {
      * to keep track of the damage in the game.
      * Return Strings must be exactly these: "Dragon won the game!", "Player won the game!".
      * Use the UML diagram to implement the associations relations classes correctly
+     * Points: 2
+     * New skills: making a game loop
+     * Difficulty: 2
      */
 
  /*
